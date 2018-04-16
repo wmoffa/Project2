@@ -1,0 +1,40 @@
+{{>header}}
+<center>{{>buttons}}</center>
+<br>
+ <div id="wrapper">
+        <div class="container">       
+<center>
+            <div class="content" style='width:800px'>
+                  <table class="table table-bordered table-condensed table-striped">
+                  <thead>
+                      <tr>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Product Type</th>
+                        <th>Owner</th>
+                        <th style='text-align:right'>Item Value</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                  <tbody>
+                      {{#each Items}}
+                      <tr>
+                          <td>{{id}}</td>
+                          <td>{{name}}</td>
+                          <td>{{Prodtype}}
+                          <td>{{Member}}</td>
+                          <td style='text-align:right'>{{value}}</td>
+                          <td style='text-align:right'>
+                            <button name='edit'>edit</button>
+                          </td>
+                      </tr>
+                      {{/each}}
+                  </tbody>
+                </table>
+            </div>
+        </div>
+</center>
+</div>
+
+
+
